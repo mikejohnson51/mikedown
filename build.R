@@ -7,7 +7,7 @@ remove.packages("mikedown")
 
 # Install with devtools
 library(devtools)
-devtools::install("../mikedown")
+devtools::install_local(".")
 
 # Load to check it is all good
 library(mikedown)

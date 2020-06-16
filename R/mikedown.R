@@ -8,14 +8,16 @@ ucsb <- function(toc = TRUE, code_folding = "hide", number_sections=TRUE) {
   template <- system.file("rmarkdown", "templates", "ucsb" ,"resources", "template_ucsb.html", package = "mikedown")
 
   # call the base html_document function
-  rmarkdown::html_document( theme = "paper",
-                               template= template,
-                               css= css,
-                               toc= toc,
+  rmarkdown::html_document( theme = "lumen",
+                               template = template,
+                               css = css,
+                               toc = toc,
                                toc_float = TRUE,
-                               toc_depth = 2,
-                               number_sections= number_sections,
+                               toc_depth = 3,
+                               number_sections = number_sections,
                                df_print = "paged",
-                               code_folding = code_folding,
+                               code_folding = code_folding
                             )
 }
+
+?rmarkdown::html_document
