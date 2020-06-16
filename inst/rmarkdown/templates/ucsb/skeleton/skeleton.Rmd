@@ -1,0 +1,25 @@
+---
+title: "UCSB R Markdown template"
+author: "[Mike Johnson](https://github.com/mikejohnson51)"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+mail: "jmj00@ucsb.edu"
+github: "mikejohnson51"
+home: ""
+output:
+  mikedown::ucsb:
+    toc: TRUE
+    number_sections: FALSE
+    code_folding: "hide"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# You need these libraries to run this template:
+library(rmarkdown)    # install.packages("rmarkdown")
+library(mikedown)     # devtools::install_github("holtzy/epuRate", force=TRUE)
+```
+
+
+
+
+
+
