@@ -65,8 +65,8 @@ a:focus {
 
 /* ---------- TOC ----------------- */
 #TOC {
-  top: 5%;
-  left: 5%;
+  top: 2%;
+  left: 2%;
   position: fixed;
   width: 210px;
 }
@@ -75,6 +75,7 @@ a:focus {
   color: grey;
   border-radius: 0px;
 }
+
 .list-group-item.active {
     color: #003660;
     background-color: white;

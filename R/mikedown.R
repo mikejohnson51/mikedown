@@ -9,15 +9,15 @@ ucsb <- function(toc = TRUE, code_folding = "hide", number_sections=TRUE) {
 
   # call the base html_document function
   rmarkdown::html_document( theme = "lumen",
-                               template = template,
-                               css = css,
-                               toc = toc,
-                               toc_float = TRUE,
-                               toc_depth = 3,
-                               number_sections = number_sections,
-                               df_print = "paged",
-                               code_folding = code_folding
-                            )
+                            template = template,
+                            css = css,
+                            toc = toc,
+                            toc_float = TRUE,
+                            toc_depth = 3,
+                            number_sections = number_sections,
+                            df_print = "paged",
+                            code_folding = code_folding,
+                            self_contained = FALSE
+  )
 }
 
-?rmarkdown::html_document
