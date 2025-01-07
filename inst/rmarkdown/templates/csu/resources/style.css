@@ -1,0 +1,129 @@
+h1.title {
+  font-size: 48px;
+  color: #1E4D2B;
+  text-align: center;
+}
+
+h3.subtitle {
+  font-size: 28px;
+  color: #111517;
+  text-align: center;
+}
+
+h4.date {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #111517;
+  text-align: center;
+}
+
+span.code {
+      background:rgba(240,128,128, 0.2);
+      border-radius: 5px 5px 5px 5px;
+      padding-left:5px;
+      padding-top:2px;
+      padding-right:5px;
+      padding-bottom:2px;
+      color:red;
+     }
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 84px;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
+pre {
+    border: 0px solid #cccccc;
+    border-radius: 0px;
+}
+
+body {
+ color: #3d4952;
+ font-family: Avenir, "Century Gothic", sans-serif;
+ font-weight: 200;
+ font-style: normal;
+ font-size: 16px;
+}
+
+
+/* ---------- Links -------------------- */
+/* ---------- original ----------------- */
+
+a {
+  color: #003660;
+}
+a:hover {
+  color: #C8C372;
+}
+a:focus {
+  color: #C8C372;
+}
+
+
+/* ---------- TOC ----------------- */
+#TOC {
+  top: 2%;
+  left: 2%;
+  position: fixed;
+  width: 210px;
+}
+.tocify {
+  border: none;
+  color: grey;
+  border-radius: 0px;
+}
+
+.list-group-item.active {
+    color: #1E4D2B;
+    background-color: white;
+    border-left: solid;
+    border-color: #1E4D2B;
+}
+.list-group-item:hover {
+    color: #1E4D2B;
+    background-color: white;
+    border-left: solid;
+    border-color: #1E4D2B;
+}
+
+.list-group-item.active:focus {
+    color: #003660;
+    background-color: white;
+    border-color: white;
+}
+
+.list-group-item.active:hover {
+    color: #003660;
+    background-color: #F1EEEA;
+    border-left: solid;
+    border-color: #003660;
+}
+
+.tocify-extend-page {
+  display: none;
+}
+
+/* ------ This is just to fix the bug on Safari where table of content is on top of content */
+.toc-content {
+  margin-left: 230px
+}
+
+/* ---------- Button ----------------- */
+.btn {
+    border-width: 0px 0px 0px 0px;
+    font-weight: normal;
+    text-transform: ;
+    color: #003660;
+}
+.btn-default {
+    color: #003660;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #003660;
+}

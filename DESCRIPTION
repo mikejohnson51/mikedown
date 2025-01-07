@@ -3,7 +3,7 @@ Title: A clean template for R Markdown documents
 Version: 0.1
 Authors@R: person("Mike", "Johnson", email = "jmj00@ucsb.edu",
                   role = c("aut", "cre"))
-Description: Mike's Rmarkdown theme
+Description: Mike's Rmarkdown themes
 Depends: R (>= 3.1.0)
 License: MIT
 LazyData: true

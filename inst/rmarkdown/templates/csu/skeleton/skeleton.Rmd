@@ -1,0 +1,104 @@
+---
+title: "CSU R Markdown template"
+author: "[Mike Johnson](https://github.com/mikejohnson51)"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+mail: "mike.johnson@colostate.edu"
+github: "mikejohnson51"
+class_name: "ESS 330"
+class_github: "ess-330"
+home: ""
+output:
+  mikedown::csu:
+    toc: TRUE
+    number_sections: FALSE
+    code_folding: "hide"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# You need these libraries to run this template:
+library(rmarkdown)    # install.packages("rmarkdown")
+library(mikedown)     # devtools::install_github("mikejohnson51/mikedown", force=TRUE)
+```
+
+RMarkdown formatting basics
+
+### Headings
+
+# Header large
+### Header medium
+##### Header small
+
+- a bullet pointed
+- list of 
+- things
+
+### Lists
+
+1. Or a 
+2. numbered list
+3. of things
+    a. Maybe with some nested sections
+    b. like this
+4. Then something else...
+
+## Formating
+
+I can make something **bold** with double asterisks, or *italicized* with single asterisks. 
+
+Make something superscripted^UP^ or subscripted~DOWN~
+
+### Links 
+
+I can add a regular hyperlink by just writing the URL: https://www.ucsb.edu/
+
+Or I can have [linked text](https://www.ucsb.edu/).
+
+I can add an image: 
+
+![](../resources/ucsb-navy-white.png)
+
+> or a lock qoute! How nice
+
+R code can also be displayed in line, for example there are `r length(tidyverse::tidyverse_packages())` in the `tidyverse`.
+
+$$\sum_{i=1}^n X_i$$
+
+Or inline, $\sum_{i=1}^n X_i$
+
+So those are some formatting basics in RMarkdown. But the real power of using markdown is that you can have your formatted text, code and outputs from your analyses all in the same place! 
+
+Let's start adding some code to our .Rmd.
+
+## 3. Add some code in markdown
+
+Unlike in a script, when we want to include **code** in an .Rmd we place it in a code chunk. Add a new code chunk with Insert > R, or with the shortcut Control + Alt + I. A new code chunk will show up with a gray background. Put your code stuff in there. 
+
+In our first code chunk, let's attach the packages we'll use today:
+
+```{r, warnings = FALSE}
+library(tidyverse)
+```
+
+### Some plots:
+
+```{r}
+# default color brewer
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  scale_color_brewer()
+
+# specifying color palette
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set3") + 
+  facet_grid(~class)
+
+```
+
+
+### Some bash
+
+```{bash}
+pwd
+ls
+```

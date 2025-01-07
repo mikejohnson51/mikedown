@@ -13,6 +13,7 @@ devtools::install_local(".")
 library(mikedown)
 
 mikedown::ucsb()
+mikedown::csu()
 
 # Footer
 # <p style="text-align: center;">Prepared for <a href="https://github.com/$class_github$/">$class_name$</a> by <a href="https://github.com/$github$">$author$</a></p>
